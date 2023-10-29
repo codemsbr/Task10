@@ -1,4 +1,4 @@
-﻿using Task10.AbstactClass;
+﻿using Task10.Class;
 
 namespace Task10
 {

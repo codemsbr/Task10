@@ -4,9 +4,9 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using Task10.Class;
+using Task10.AbstactClass;
 
-namespace Task10.AbstactClass
+namespace Task10.Class
 {
     internal class Controller
     {
@@ -27,7 +27,7 @@ namespace Task10.AbstactClass
         {
             Console.Write("Enter Door Count : ");
             int doorCount = Convert.ToInt32(Console.ReadLine());
-            
+
             Console.Write("Enter Win Code : ");
             string winCode = Console.ReadLine();
 
@@ -163,10 +163,10 @@ namespace Task10.AbstactClass
 
         public void RemoveIndex(int index)
         {
-            if(myArray.Length - 1 != index)
+            if (myArray.Length - 1 != index)
             {
                 Short(index);
-                Array.Resize(ref myArray,myArray.Length - 1);
+                Array.Resize(ref myArray, myArray.Length - 1);
             }
             else
             {
