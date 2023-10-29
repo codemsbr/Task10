@@ -11,10 +11,5 @@ namespace Task10.AbstactClass
         public abstract float DriveTime { get; set; }
         public abstract float DrivePath { get; set; }
         public abstract float AverageSpeed();
-
-        public override string ToString()
-        {
-            return $"{DriveTime} {DrivePath}";
-        }
     }
 }

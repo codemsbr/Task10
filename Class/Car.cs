@@ -25,7 +25,7 @@ namespace Task10.Class
         public string WinCode { get => _winCode; set => _winCode = string.IsNullOrWhiteSpace(value) ? value : string.Empty; }
         public string TransmissionKind { get => _transmissionKind; set => _transmissionKind = string.IsNullOrWhiteSpace(value) ? value : string.Empty; }
         public string FuelType { get => _fuelType; set => _fuelType = string.IsNullOrWhiteSpace(value) ? value : string.Empty; }
-        public int DoorCount { get => _doorCount; set => _doorCount = value > 0 ? value : 0; } 
+        public int DoorCount { get => _doorCount; set => _doorCount = value > 0 && value < 5 ? value : 0; } 
         public int HorsePower { get => _horsePower; set => _horsePower = value > 0 ? value : 0; }
         public float TankSize { get => _tankSize; set => _tankSize = value > 0 ? value : 0; }
         public float CurrentOil { get => _currentOil; set => _currentOil = value > 0 && value < TankSize ? value : 0; }
